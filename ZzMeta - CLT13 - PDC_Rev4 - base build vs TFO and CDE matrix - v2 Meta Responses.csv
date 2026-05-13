@@ -1,0 +1,258 @@
+﻿Item #,PDC Reference,Discipline / System,Sub-System,Description,"Date
+Added",Show to Meta?,Pricing Status,Client Approval?,"Estimated Cost
+($USD)",Qty,UoM,"NRC
+Estimate
+Total 200MW
+($USD)",Base Build Mod vs. TFO Add,Paid By,Scope Spend,"Approved
+(Sales/SE)","Approved
+(D&C or Cost Est)","Approved
+(Portfolio)","Pricing Accuracy
+(SE ROM, D&C ROM, Vendor ROM, Quote)",DLR BIC,RFS Condition?,Column1,DLR Internal Notes / Status,Meta SME,DLR Owner,Pre-Sales Notes & Customer Clarifications
+1,"04.01.A.a.i.1
+04.05.C.4.i",Electrical,PQMs - MSBs,"Furnish and install Power Quality Meters (PQMs) on Main Switchboards (MSBs) (A, B, C, D, F, and R block) per Meta PQM Performance Spec Rev4, including separate CTs, PTs, meters, meter enclosures, wiring, conduits, fittings, appurtenances, and hardware, including 2-wire twisted pair wiring for Modbus communications over RS485 interface to Meta FacNet gateways.  Meters to run on dual 120VAC, 20A, 1P, UPS-backed circuits provided from two (2) separate 300kVA UPS units.",46062,Yes,Closed,,249900,20,per Data Hall,4998000,BB Mod,Meta,Suites,Yes,Yes,,D&C ROM,Procurement,Yes,,"D&C: vendor confirmed viable approach. Cost is supplier cost only 
+2-wire modbus tie-over in TFO. This is in SWBD Sect 3 - Util/Gen bus
+
+~$41k per MSB x 6 MSBs per suite",,Alex Arteaga,
+2,"04.01.A.a.i.2
+04.01.A.a.i.3
+04.05.C.4.i",Electrical,PQMs - CDPs / CODs,"Furnish and install Power Quality Meters (PQMs) on Critical Distribution Panels (CDPs) or Critical Output Distribution (COD) boards (A, B, C, D, F, and R-blcok) per Meta PQM Performance Spec Rev4, including separate CTs, PTs, meters, meter enclosures, wiring, conduits, fittings, appurtenances, and hardware, including 2-wire twisted pair wiring for Modbus communications over RS485 interface to Meta FacNet gateways.  Meters to run on dual 120VAC, 20A, 1P, UPS-backed circuits provided from two (2) separate 300kVA UPS units.",46062,Yes,Closed,,249900,20,per Data Hall,4998000,BB Mod,Meta,Suites,Yes,Yes,,D&C ROM,Procurement,Yes,,Same as above except on SWBD Sect 6 - UPS output/Critical bus ,,Alex Arteaga,"Using mechanical UPS as source, then install step-down xfmr to get 120VAC, Qty = 2 per suite, verbally accepted by Meta during 3/9/26 5:00pm CDT call."
+3,"04.01.A.a.i.4
+04.05.C.4.ii",Electrical,PQMs / BCMS - Rows,"Furnish and install row-level Power Quality Meters (PQMs) which will also serve as branch circuit monitoring system (BCMS) on the load side of the manual transfer switch (MTS) for each IT equipment row per Meta PQM Performance Spec Rev4, including separate CTs, PTs, meters, meter enclosures, wiring, conduits, fittings, appurtenances, and hardware, including 2-wire twisted pair wiring for Modbus communications over RS485 interface to Meta FacNet gateways.  Meters to run on dual 120VAC, 20A, 1P, UPS-backed circuits (not powered by local shunt PT).",46062,Yes,Closed,,29750,600,per row,17850000,TFO Add,Meta,Suites,Yes,Yes,,D&C ROM,Design,Yes,,"Can meta confirm spec enclosure can export from PQM enclosure? Minor cost TBD if item 4 is approved.
+
+Standalone similar cost to item 3",,Alex Arteaga,"Per Meta, these meters will be installed on the load side of the MTSs which will be located at the end of each server rack row.  Therefore, this functionality will be covered by the PQMs - Rows line item, above."
+4,04.01.B.a.i,Electrical,Overrack power busway (Server rows),"Furnish and install over rack power busway, 415/240V, 800A, 3P4W+G, one (1) run per each server row, including busway, end feed box with IR scanning window, and all associated wiring, conduits, fittings, supports, appurtenances, and hardware for a complete system installation.",46062,Yes,Closed,,2155923,18,per data hall,38806614,TFO Add,Meta,Suites,Yes,Yes,,,Design,No,,Cost estimation based on Stantec concept design layouts of 3/6/26.,,Cost Estimation,"Does this include feeder run from PDU to MTS switch located on data hall floor?  If so, need to remove that cost from this line item and re-allocate to MTS line item."
+5,"04.01.B.a.ii
+04.01.B.a.iv
+04.01.C.a.iv",Electrical,Tap-off boxes,"Furnish and install tap-off box, dual 415/240V, 30A, 3P4W+G circuits, each with 30A, 3P, 80% rated, 25kAIC MCCB plus current limiting fuse, each circuit terminated to NEMA L22-30R receptacle.",46062,Yes,Closed,,1751.58,16000,per Tap Box,28025280,TFO Add,Meta,Suites,Yes,Yes,,Cost Estimating ROM,Design,No,,Cost estimation based on Stantec concept design layouts of 3/6/26.  One (1) dual-circuit tap off box per each rack position.,,Cost Estimation,
+6,04.01.B.a.iii,Electrical,PDU output breakers,"Change PDU output breakers from 6 x 600A per PDU to 4 x 800A, 3P, 100% rated, electronic trip (LSI) per PDU.",46008,Yes,Closed,,89000,20,per Data Hall,1780000,BB Mod,Meta,Suites,Yes,Yes,Yes,D&C ROM,Procurement,Yes,,"D&C: Equipment PO placed
+cost per suite - assuming 20 suites (design cost added)
+Cost includes PXR10 trip breakers",,Alex Arteaga,"Need to confirm BIM status PDU depth increases 8"" may need to shift whitespace wall inward.
+Question:  Since each PDU will feed only one (1) server row, can the number of output breakers per PDU be reduced to a smaller quantity?"
+7,04.01.B.b.i,Electrical,Manual Transfer Switches,"Furnish and install manual transfer switches (MTS), 800A rated, for 415/240V, 800A, 3P4W+G power, for each Server row.",46062,Yes,Closed,,339338,392,per MTS,133020496,TFO Add,Meta,Suites,Yes,Yes,,,Design,No,,"Need a lot more info to establish scope
+cost per suite - assuming 20 suites
+Stantec design assuming ATS",,Alex Arteaga,MTS added to expanded STS gallery. Dual fed from PDUs
+8,04.01.B.c.ii,Electrical,Goal Post receptacles,"Furnish and install dual 230V, 20A, 1P, UPS-backed circuits terminated to NEMA L6-20R recetacles, to cold aisle ""goal post"" receptacles from diverse electrical panels to each IT equipment row",46062,Yes,Closed,,100011,20,per row,2000220,TFO Add,Meta,Suites,Yes,Yes,,Cost Estimating ROM,Design,No,,"Cost estimation based on Stantec concept design layouts of 3/6/26.  Two (2) receptacles per ""goal post"" x five (5) goal posts per cold aisle x 10 colds aisle per data hall = 100 receptacles per data hall.",,Cost Estimation,
+9,04.01.B.c.iii,Electrical,IDF Racks,"Provide dual UPS-backed power to Meta IDF racks within Data Halls
+Information needed from Meta - voltage, ampacity, 1p/3p, and termination",46085,Yes,Closed,,0,,per IDF rack,0,TFO Add,Meta,Suites,Yes,Yes,,,Design,No,,,,Cost Estimation,Need Meta clarification regarding # of IDFs per row / data hall and circuit requirements to each.
+10,04.01.B.d,Electrical,Convenience receptacles,"Furnish and install 120V, 15A, 1P circuits terminated to duplex NEMA 5-15R receptacles for convenience outlets, 1 per each IT equipment aisle.",46085,Yes,Closed,,27195,20,per data hall,543900,TFO Add,Meta,Suites,Yes,Yes,,Cost Estimating ROM,Design,No,,,,Cost Estimation,NOTE:  Receptacles need to be ceiling mounted.
+11,04.01.B.d.i,Electrical,Cord Reels,"Furnish and install 120V, 15, 1P, cord reel with NEMA 5-15P plug, 1 per each IT equipment aisle.",46062,Yes,Closed,,37296,20,per data hall,745920,TFO Add,Meta,Suites,Yes,Yes,,Cost Estimating ROM,Design,No,,,,Cost Estimation,NOTE:  Cord reels to be ceiling mounted.
+12,"04.01.B.e.i
+04.01.C.b.i",Electrical,Grounding,"Furnish & install supplemental telecommunications grounding system per Meta requirements, IEEE 1100, and TIA 607",46062,Yes,Closed,,148395.9,20,per Data Hall,2967918,TFO Add,Meta,Suites,Yes,Yes,,Cost Estimating ROM,Design,No,,,,Cost Estimation,
+13,04.01.B.g,Electrical,Coordination Study,Upgrade PDU output breaker trip unit from PXR10 to PXR20 to provide for additional adjustability in trip settings.  Update coordination study and breaker trip settings based upon Meta fit-out and Meta trip setting requirements,46062,Yes,Closed,,6000,600,per PDU,3600000,BB Mod,Meta,Suites,Yes,Yes,,,Procurement,Yes,,"Cost to increase PDU breaker from PXR10 (base) to PXR20 included. 
+PXR10:
+LTPU: Adjustable from 200A to 600A
+LTD: Fixed at 10s
+STPU: Adjustable from 2x to 10x
+STD: 0.15s or 0.30s only, I2T Off
+INST: Adjustable from 2x to 10x
+The PXR20 would add adjustable LTD from 1.5s to 12s and adjustable STD from 0.05s to 0.5s.",,Alex Arteaga,
+14,04.01.C.a.i,Electrical,Overrack power busway (Network rows),"Furnish and install two (2) dual UPS-backed over rack power busways, 415/240V, 800A, 3P4W+G, per Network room Data Hall, including busway, end feed box with IR scanning window, and all associated wiring, conduits, fittings, supports, appurtenances, and hardware for a complete system installation.  Balance of over rack power busways to be same as item #6, above.",46085,Yes,Closed,,3025697.94,2,per Data Hall,6051395.88,TFO Add,Meta,Suites,Yes,Yes,,Cost Estimating ROM,Design,No,,,,Cost Estimation,Meta confirmed that requirement is 2 x over rack busway runs for two (2) network equipment rows in Network Room data halls.
+15,"04.01.E.a
+04.03.F",Electrical,Lighting (Data Halls),"Relocation, reconfiguration, or addition of lighting fixtures to fully coordinate with Meta IT equipment row and aisle locations to achieve Meta illumination requirements of 30 f.c. at 2'-6"" workplane with 6:1 max/min uniformity ratio",46062,Yes,Closed,,55500,20,per Data Hall,1110000,BB Mod,Meta,Suites,Yes,Yes,,D&C ROM,Design,Yes,,,,Alex Arteaga,
+16,"04.01.E.b
+04.03.F",Electrical,Lighting (Data Halls),Update illumination study for fully coordinated design with Meta IT equipment row and aisle locations,46062,Yes,Closed,,0,20,per Data Hall,0,BB Mod,Meta,Suites,Yes,Yes,,,Design,Yes,,"Assume Part of Design, Just Show Lighting Study to Client",,Alex Arteaga,
+17,04.01.F,Electrical,Nameplates,"Furnish and install engraved phenolic nameplates for all Meta electrical equipment within the data hall (includes MTS's, over rack power busway end feed boxes",46085,Yes,Closed,,55500,20,per Data Hall,1110000,TFO Add,Meta,Suites,Yes,Yes,,,Design,No,,,,Cost Estimation,
+18,04.02.B,Mechanical ,CFD studies,Perform CFD studies confirming data hall thermal performance based upon Meta provided IT equipment layout(s),46085,Yes,Closed,,75000,1,lot,75000,TFO Add,Meta,Suites,Yes,Yes,,,Design,Yes,,this assumes two reports - network and server suite with some continegency,,Alex Arteaga,
+19,"04.02.C.1
+04.02.D.2
+04.02.D.3
+04.05.C.5.iv",Mechanical ,FWUs and CDUs (Server data halls),"Adder per data hall to go from 100% air cooling (original CLT13 BoD) to 80% liquid / 20% air cooling (80-20 liquid/air ratio used in our base rate calculations)
+¡ Furnish and install 5 x 2MW CDUs per suite (increased from 0 x CDUs in original CTL13 BoD)
+¡ Furnish and install 7 x FWUs per suite (reduced from 28 x FWUs in original CTL13 BoD)
+¡ Applies to Server data halls (Megapod) only",45986,No,Closed,N/A,435000,18,per Data Hall,7830000,N/A,N/A,Suites,Yes,Yes,,D&C ROM,No Action,Yes,,"80%/20% Liquid/Air cooling requirement. CDUs are required to be installed in the galleries
+2MW CDUs shall be included - quantity N=4, N+1=5, provide 5 CDUs total per suite
+FWUs for 20% Air Cooled load - quantity N=5, N+2=7, provide 7 FWUs total per suite
+Standard commissioning only, no customer specific Cx requirements included.",,Alex Arteaga,
+20,"04.02.C.1
+04.02.D.2
+04.02.D.3
+04.05.C.5.iv",Mechanical ,FWUs and CDUs (Server data halls),"Adder per data hall to go from 80% liquid / 20% air cooling to 80% liquid /85% air cooling (80-85 liquid/air ratio per Meta's direction).
+¡ No additional CDUs required (quantity remains at 5 x 2MW CDUs per suite)
+¡ Furnish and install 23 x FWUs per suite (increased from 7 x FWUs in 80-20 liquid-air underwriting)
+¡ Applies to Server data halls (Megapod) only",45986,No,Closed,N/A,2028000,18,per Data Hall,36504000,N/A,N/A,Suites,Yes,Yes,,D&C ROM,Procurement,Yes,,"80%/85% Liquid/Air cooling requirement. The following information is supplemental to the 80/20 information above
+No additional CDUs required
+FWUs for 85% Air Cooled load - quantity N=21, N+2=23, provide 23 FWUs total per suite.
+Standard commissioning only, no customer specific Cx requirements included.",,Alex Arteaga,"The reduction of air cooling percentage from 100% to 85% will save on the total quantity of CRAHs in the data hall. The exact amount will need to be validated by interior CFD but for this exercise we have assumed the 26+2 redundancy can reduce to 24+2.  We have included standard commissioning only, no customer specific requirements."
+21,"04.02.C.1
+04.02.C.2
+04.02.D.2",Mechanical ,FWUs (all data halls),Furnish and install three (3) additional FWUs per data to achieve 158 cfm/kW air flow requirement.  The quantity of additional FWUs required is applicable to both Network room data halls (100% air cooled) and Server (Megapod) data halls (80% liquid / 85% aid cooled).,45986,Yes,Closed,,482850,20,per Data Hall,9657000,BB Mod,Meta,Suites,Yes,Yes,,D&C ROM,Procurement,Yes,,Add FWUs to achieve 158 cfm/kW based on any liquid-to-air cooling ratios,,Alex Arteaga,D&C: +15% requirement waived per conversation with KOB
+22,"04.02.D.1
+04.02.C.1
+04.02.D.4",Mechanical ,TCS piping,"Engineer, furnish, and install (EF&I) technology water loop (TWL) system piping, taps, valves, fitting, flanges, disconnects, hoses, supports, associated appurtances, and  hardware.",45986,Yes,Closed,,9779580,20,per Data Hall,195591600,TFO Add,Meta,Suites,Yes,Yes,,,Design,No,,,,Cost Estimation,
+23,"04.02.D.1
+04.02.C.2
+04.02.D.4",Mechanical ,TCS system prep (Network data halls),"Engineer, furnish, and install Nitrogen generation system for TCS system in Network Room data halls which will not have CDUs deployed Day One (Qty = 2 data halls, +1 system per data hall).",46085,Yes,Closed,,225000,2,per Data Hall,450000,TFO Add,Meta,Suites,Yes,Yes,,D&C ROM,Procurement,No,,"Need means & method to prevent unused TCS loop corrosion in 100% air cooled Network Room data halls (Qty = 2 data halls).
+Includes system components, connection to loop, power and monitoring",,Alex Arteaga,
+24,04.02.D.3.ii,Electrical,Mechanical UPS,Furnish and install 300kVA UPS system for mechanical loads.  Ride-through time to be 90 seconds at full rated load.  Mechanical UPS system to power CDUs and facility chilled water system pumps.  (Qty = 6 mUPS systems per data hall),45947,No,Closed,N/A,2510000,18,per Data Hall,45180000,N/A,N/A,Suites,Yes,Yes,,D&C ROM,Procurement,Yes,,"***Paid for in the lease base rent***
+Per suite, mechanical UPS and associated batteries to be added to each capacity block. New mechanical panelboards to be fed from each UPS, with one in each of the two galleries.  Mechanical Panelboards to serve power to CDU’s as well as the chilled water pump internal to air cooled chillers on the roof.
+Two (2) mechanical UPS systems per suite will also be used to provide dual UPS-backed power feeds to Meta power meters
+cost per suite - assuming 20 suties",,Alex Arteaga,"SEPR From Q4, Confirm if the 300kVA is in addition to or carved out of the 10MW suite
+
+Need to confirm battery run time - is it 90 seconds or 5 minutes?"
+25,04.02.D.3.ii,Electrical,Mechanical UPS,Furnish and install 300kVA UPS system for mechanical loads.  Ride-through time to be 90 seconds at full rated load.  Mechanical UPS system to power CDUs and facility chilled water system pumps.  (Qty = 6 mUPS systems per data hall),45947,Yes,Closed,,2510000,2,per Data Hall,5020000,BB Mod,Meta,Suites,Yes,Yes,,D&C ROM,Procurement,Yes,,"***Paid for in the lease base rent***
+Per suite, mechanical UPS and associated batteries to be added to each capacity block. New mechanical panelboards to be fed from each UPS, with one in each of the two galleries.  Mechanical Panelboards to serve power to CDU’s as well as the chilled water pump internal to air cooled chillers on the roof.
+Two (2) mechanical UPS systems per suite will also be used to provide dual UPS-backed power feeds to Meta power meters
+cost per suite - assuming 20 suties",,Alex Arteaga,"SEPR From Q4, Confirm if the 300kVA is in addition to or carved out of the 10MW suite
+
+Need to confirm battery run time - is it 90 seconds or 5 minutes?"
+26,04.02.D.3.ii,Mechanical ,Thermal Energy Storage,"Furnish and install thermal energy storage (TES) tanks, 1200 gallon capacity, one (1) per each air-cooled chiller (ACC) unit.  (Qty = 12 TES tanks per data hall)",45947,No,Closed,N/A,2256000,18,per Data Hall,40608000,N/A,N/A,Suites,Yes,Yes,,D&C ROM,Procurement,Yes,,"***Paid for in the lease base rent***
+TES tanks to be located on the roof, adjacent to air-cooled chillers.
+Base design includes roof dunnage capacity and layout for (12) 1,200-gallon TES tanks per suite; one tank per chiller.
+cost per suite - assuming 19 suites",,Alex Arteaga,"SEPR From Q4, How many minutes of ridethrough is this?"
+27,04.02.D.3.ii,Mechanical ,Thermal Energy Storage,"Furnish and install thermal energy storage (TES) tanks, 1200 gallon capacity, one (1) per each air-cooled chiller (ACC) unit.  (Qty = 12 TES tanks per data hall)",45947,Yes,Closed,,2256000,2,per Data Hall,4512000,BB Mod,Meta,Suites,Yes,Yes,,D&C ROM,Procurement,Yes,,"***Paid for in the lease base rent***
+TES tanks to be located on the roof, adjacent to air-cooled chillers.
+Base design includes roof dunnage capacity and layout for (12) 1,200-gallon TES tanks per suite; one tank per chiller.
+cost per suite - assuming 19 suites",,Alex Arteaga,"SEPR From Q4, How many minutes of ridethrough is this?"
+28,04.03.A.1,Architectural,Loading Dock,"Soft costs - design fees to increase loading dock area to ±8,000 SF minimum to conform to Meta Global Design & Space Standards (GDSS) for ""Shipping & Receiving"" v1.2.",46084,Yes,Closed,,100000,1,Lump Soft Cost,100000,BB Mod,Meta,PBB,Yes,Yes,,D&C ROM,Design,Yes,,may not need if intended to be covered by storage space number,,Alex Arteaga,"Preliminary sketch shared with Meta 3/4, waiting on feedback from Natalya. Once Meta approved, Alex will have architect complete a drawing showing the change and we can price. Not expected to add significant costs."
+29,04.03.A.1,Architectural,Loading Dock,"Construction costs - build changes to increase loading dock area to ±8,000 SF minimum",46084,Yes,Closed,,1200000,1,per SF,1200000,BB Mod,Meta,PBB,Yes,Yes,,,Design,Yes,,,,Alex Arteaga,
+30,04.03.A.1,Architectural,ERAD Room,"Soft costs - design fees to create ERAD room, ±550 SF, per Meta Global Design & Space Standards (GDSS) for ""ERAD"" v3.3 dated 2025-01-10",46087,Yes,Closed,,20000,1,Lump Soft Cost,20000,BB Mod,Meta,PBB,Yes,Yes,,,Design,Yes,,,,Alex Arteaga,
+31,04.03.A.1,Architectural,ERAD Room,"Construction costs - build changes required to create ERAD room, ±550 SF, per Meta Global Design & Space Standards (GDSS) for ""ERAD"" v3.3 dated 2025-01-10",46087,Yes,Closed,,137500,1,per SF,137500,BB Mod,Meta,PBB,Yes,Yes,,,Design,Yes,,,,Alex Arteaga,
+32,04.03.A.1,Architectural,Technical Fluid Work Room,"Soft costs - design fees to create Technical Fluid Work Room, ±900 SF, per Meta Global Design & Space Standards (GDSS) and Data Center Infrastructure Standard DCIS-3433.",46087,Yes,Closed,,10000,1,Lump Soft Cost,10000,BB Mod,Meta,PBB,Yes,Yes,,,Design,Yes,,,,Alex Arteaga,
+33,04.03.A.1,Architectural,Technical Fluid Work Room,"Construction costs - build changes required to create Technical Fluid Work Room, ±900 SF, per Meta Global Design & Space Standards (GDSS) and Data Center Infrastructure Standard DCIS-3433.",46087,Yes,Closed,,247500,1,Lot,247500,BB Mod,Meta,PBB,Yes,Yes,,,Design,Yes,,,,Alex Arteaga,
+34,"04.03.A.1
+04.01.D.a
+04.01.E.a
+04.01.E.b
+04.02.A",Architectural,Storage Space (Design),Storage space design (allowance),46062,Yes,Closed,,69375,1,Lot,69375,TFO Add,Meta,PBB,Yes,Yes,,D&C ROM,Design,No,,see LSP supporting doc,,Alex Arteaga,What is included?
+35,"04.03.A.1
+04.01.D.a
+04.01.E.a
+04.01.E.b
+04.02.A",Architectural,Storage Space (Build),Storage space build-out (starting from warm shell conditions),46062,Yes,Closed,,75,18500,"per
+SF",1387500,TFO Add,Meta,PBB,Yes,Yes,,D&C ROM,Design,No,,,,Alex Arteaga,What is included?
+36,"04.03.A.1.i.a
+04.01.D.a
+04.01.E.a
+04.01.E.b
+04.02.A
+04.03.B",Architectural,Office Space (Design),Office space design - 35 people (allowance),46062,Yes,Closed,,61875,1,Lot,61875,TFO Add,Meta,PBB,Yes,Yes,,D&C ROM,Design,No,,,,Alex Arteaga,"What is included?
+Would need to include rough-in for A/V systems (e.g., 120VAC and LV conduit, blocking for wall mounted items).  A/V equipment and LV wiring design, procurement, and installation by Meta / others. "
+37,"04.03.A.1.i.b
+04.01.D.a
+04.01.E.a
+04.01.E.b
+04.02.A
+04.03.B",Architectural,Office Space (Build),Office space build-out - 35 people (starting from warm shell conditions),46062,Yes,Closed,,225,5500,"per
+SF",1237500,TFO Add,Meta,PBB,Yes,Yes,,D&C ROM,Design,No,,see LSP supporting doc,,Alex Arteaga,"What is included?
+Would need to include rough-in for A/V systems (e.g., 120VAC and LV conduit, blocking for wall mounted items).  A/V equipment and LV wiring design, procurement, and installation by Meta / others. "
+38,04.03.A.1.i.c,Architectural,Kitchennette,"Design and build kitchennette in Tenant office space per Meta Global Design & Space Standards (GDSS) for Microkitchen, v2.2 dated 2024-06-28",46085,Yes,Closed,,150000,1,Lot,150000,TFO Add,Meta,PBB,Yes,Yes,,D&C ROM,Design,No,,represents Typical Breakroom Applicaiton,,Alex Arteaga,
+39,04.03.A.2.ii.a,Architectural,Corridors and Pathways,"Convert all wall-hung hallway items (fire extinguishers, AEDs, etc.) to flush-mount enclosures to ensure 8'-0"" clear width along corridors designated as ""IT equipment Path-of-Travel"".",46084,Yes,Closed,,222500,1,Lot,222500,BB Mod,Meta,PBB,Yes,Yes,,D&C ROM,Design,Yes,,"Shift Data hall wall along UPS corridor up to 9"" and recess fire extinguishers to minium visibility protusion of 4""
+$3500/FE  ~50 Fes + Wall rating detailing (soft costs only)",,Alex Arteaga,Can we assume this is small enough not to bid?
+40,"04.03.A.2.ii.c
+04.03.A.2.ii.d
+04.03.A.2.ii.e",Architectural,Door Swings,"Add 'door swing safety marking' to floor area for all doors that swing out into the ""IT equipment Path-of-Travel"" corridor; add safety/warning signs to all doors that swing out into the ""IT equipment Path-of-Travel"" corridor.",46085,Yes,Closed,,650,275,per each door,178750,TFO Add,Meta,PBB,Yes,Yes,,D&C ROM,Design,No,,"Add caution tape or paint door swing arc on floor.  Add sign/placard to public side of door stating ""Caution - Door Opens Outward"".  Add sign/placard to private side of door stating ""Open Door Slowly"".",,Alex Arteaga,
+41,04.03.A.2.iv.f,Architectural,Freight Elevators,Furnish and install wall mirrors around freight elevators as a safety measure.  Ensure coverage of any blind corners and high-traffic areas.,46085,Yes,Closed,,400,20,ea,8000,TFO Add,Meta,PBB,Yes,Yes,,D&C ROM,Design,No,,,,Alex Arteaga,
+42,04.03.C,Architectural,Room numbering,Furnish and install Meta specified room numbering placards for all spaces,46062,Yes,Closed,,129000,1,Lot,129000,TFO Add,Meta,PBB,Yes,Yes,,D&C ROM,Design,No,,,,Alex Arteaga,
+43,04.03.D,Architectural,Room signage,"Furnish and install Meta signage (placards) for all Meta occupied (leased) spaces plus building electrical rooms, UPS rooms, FWU/PDU galleries, house electrical rooms, and water room",46085,Yes,Closed,,277500,1,Lot,277500,TFO Add,Meta,PBB,Yes,Yes,,,Design,No,,,,Alex Arteaga,
+44,04.03.E.2,Architectural,Doors,Convert doors with vision panels to solid doors only for locations that look in to or out of Meta occupied spaces.,46085,Yes,Closed,,0,1,Lot,0,BB Mod,Meta,PBB,Yes,Yes,,D&C ROM,Design,Yes,,"Will comply, I believe this could be no cost",,Alex Arteaga,
+45,04.03.E.3.i,Architectural,Doors,"Equip doors along ""IT equipment Path-of-Travel"" with automatic electric openers",46062,Yes,Closed,,12000,32,ea,384000,BB Mod,Meta,PBB,Yes,Yes,,,Design,Yes,,,,Alex Arteaga,
+46,04.03.E.3.ii,Architectural,Doors,"Upgrade existing 6'-0"" wide x 10'-0"" high doors along ""IT equipment Path-of-Travel"" to 8'-0"" wide x 10'-0"" high doors.",46084,Yes,Closed,,10000,30,ea,300000,BB Mod,Meta,PBB,Yes,Yes,,,Design,Yes,,,,Alex Arteaga,
+47,04.03.E.3.iii.e,Architectural,Doors,Equip all doors with Medeco high-security lock cylinders and cores,46062,Yes,Closed,,400,300,ea,120000,BB Mod,Meta,PBB,Yes,Yes,,D&C ROM,Design,Yes,,,,Alex Arteaga,"We have submitted the BEST security key standard that we use for their approval, but if not approved we will revert to Medeco. Who/Where did this come from?"
+48,04.03.E.3.iii.l,Architectural,Doors,"Replace existing private side door hardware (ADA lever handle) with rim exit device (panic bar) for doors along ""IT equipment Path-of-Travel""",46062,Yes,Closed,,2250,32,ea,72000,BB Mod,Meta,PBB,Yes,Yes,,D&C ROM,Design,Yes,,,,Alex Arteaga,
+49,04.03.E.3.iii.m,Architectural,Doors,Equip select doors with REX (Request to Exit) buttons,46062,Yes,Closed,,3000,50,ea,150000,BB Mod,Meta,PBB,Yes,Yes,,D&C ROM,Design,Yes,,,,Alex Arteaga,"Assumed 50x doors, may be more - waiting on confirmation from Meta on ""all meta spaces vs whole buiilding"""
+50,04.03.G.1,Architectural,Partitions,"Upgrade data halls and galleries to support deployment of battery back-up units (BBUs):
+¡ 600kWh maximum Li-Ion batteries per data hall 
+¡ Maximum of 1kWh Li-Ion battery per rack 
+¡ Add sheet rock and fire/smoke barriers to increase perimeter walls to 2-hour rating
+¡ Increase sprinkler density to accommodate additional fire load requirements",45947,Yes,Closed,,2100000,20,per Data Hall,42000000,BB Mod,Meta,Suites,No,No,No,ROM,Design,No,,"Customer plans to install more than 600kWh of lithium ion batteries per data hall. Our understanding is that all of the racks will have the same number of BBUs so that means less than 1kWh per rack.
+Max power capacity of 20 kWh per rack
+No more than 2 shelves of BBUs per rack 
+Server row spacing minimum 4 ft
+Recommendations are intended to reduce fire spread between BBUs along an entire rack row.
+We are still doing a local AHJ review and are studying the sprinkler system implications.
+
+D&C: Cost relects room rating increase and splinkler density enhancements only
+cost per suite - assuming 20 suites",,Alex Arteaga,see SEPR from Q4
+51,04.03.G.2,Architectural,Ceiling Height,Soft costs for recoordination of ceiling and overhead services to increase data hall ceiling clear height from 14' A.F.F. to 16' A.F.F.,45986,Yes,Closed,,16000,8,per Data Hall,128000,BB Mod,Meta,Suites,Yes,Yes,,D&C ROM,Design,Yes,,"KOB: If no cost, should we carry cost for additional CFD study to validate airflow requirements?
+
+D&C: yes to CFD.Can we have STS gallery to mech gallery low point?
+4 suites at 90% design
+need to formalize this direction ASAP to avoid incurring BIM coordination/design costs.",,Alex Arteaga,What is the drop dead date to make this decision? Confirm if we made this change already
+52,04.03.G.2.i,Architectural,Ceiling grid,Increase data hall structural ceiling grid hanging load capacity to 45 psf.,46062,Yes,Closed,,500000,20,per Data Hall,10000000,BB Mod,Meta,Suites,Yes,Yes,,D&C ROM,Design,Yes,,D&C allowance for 50% increased ceiling cost. Excludes impacts to primary strucutre systems. Need more information from Meta; cost per suite - assuming 20 suites,,Alex Arteaga,"Kerry reports that this is not a Meta requirement. Where did this come from? Where is the pricing from? What is the PSF value?
+
+Alex: Base design has an allowance of 30 psf for tenant use for IT cabling, cable trays, busways, containment and overhead power distrobution. Enough for meta?
+
+TCS could be additional 20psf - need to confirm from meta no issue to hang direct from deck not slotted channel"
+53,"04.04.I
+04.04.J
+04.04.K
+04.04.L",HAC Design,Hot aisle containment,"Furnish and install hot aisle containment pods
+¡ Pods are ±90'-0"" long by 7'-0"" wide
+¡ Equipped with automatically closing, dual-sliding door assemblies on each end
+¡ Can accommodate racks up to 8'-0"" high
+¡ Adjustable top blanking panels to accommodate racks of different heights
+¡ Add bracing to meet seismic design requirement
+¡ Constructed of FM-approved fire-resistant materials",46062,Yes,Closed,,2565654,20,per data hall,51313080,TFO Add,Meta,Suites,,,,,Design,No,,"Estimate based on (10) hot aisle containment pods per data hall.  HAC is 7'-0"" wide x 90'-0"" long x 16'-0"" high (extends to acoustic drop ceiling).  Includes full-height blanking panels for gaps.",,Cost Estimation,
+54,04.04.L,HAC Design,Hot aisle containment,Base Build reconfigurations required by AHJ due to HAC installation ,46086,Yes,Closed,,600000,20,per Pod,12000000,BB Mod,Meta,Suites,,,,,Design,No,,"Costs associated with unknown AHJ plan review/inspector conflicts with HAC installation. ""The PWC Factor""",,Alex Arteaga,
+55,04.04.M,HAC Design,Labeling,Furnish and install row-position labels in each hot aisle; furnish and install row-end labels above each HAC pods door,46062,Yes,Closed,,16095,20,ea,321900,TFO Add,Meta,Suites,Yes,Yes,,,Design,No,,,,Cost Estimation,
+56,04.05.B.2,BMS/EPMS,DCIM interface,"Provide read-only web portal for DCIM interface (not API) via Schneider Electric UOC - Aveva platform.  Includes initial deployment, testing, and integration costs plus annual licensing & support.",46062,Yes,Closed,,2435346.736,1,Lot,2435346.736,TFO Add,Meta,PBB,Yes,Yes,,Vendor ROM,BMS,Yes,,Schneider UOC - Aveva Platform.  $600k up-front NRC cost plus $90k/yr annual license fee escalated at 3.75% annually.,,Mark Fisher,
+57,04.05.C.2,BMS/EPMS,BMS/EPMS points,Test and verify all BMS and EPMS point per Meta requirements,46062,No,Closed,,0,1,Lot,0,BB Mod,DLR,PBB,,,,,BMS,Yes,,"This cost is included in the Schneider UOC - Aveva Platform detailed in the ""Provide read-only web portal for DCIM interface (not API)"" item above.",,Mark Fisher,
+58,04.05.C.3,BMS/EPMS,BMS/EPMS system,Create translation table to cross-rerference all BMS and EPMS points to Meta naming standards per Meta document BMS-PLAN-348 - FDM Playbook Rev 1.0),46062,Yes,Closed,,0,1,Lot,0,TFO Add,Meta,PBB,,,,,BMS,Yes,,"This cost is included in the Schneider UOC - Aveva Platform detailed in the ""Provide read-only web portal for DCIM interface (not API)"" item above.",,Mark Fisher,
+59,"04.05.C.5.i.a
+04.05.C.5.ii.a",Mechanical ,SLA sensors - air (DLR),"Furnish and install wired temperature & humidity sensors in cold aisles.  Sensors to be located at front of IT equipment racks, mounted 5'-0"" A.F.F.  Includes combination T/H sensor, wiring, junction boxes, conduits, and associated hardware for connection to Landlord's BMS system via Modbus on RS485 interface to Landlord's gateways.  Qty of sensors = 3 per row.",46085,Yes,Closed,,582750,20,ea,11655000,TFO Add,Meta,Suites,Yes,Yes,,,Design,No,,,,Cost Estimation,
+60,"04.05.C.5.i.a
+04.05.C.5.ii.a",Mechanical ,SLA sensors - air (Meta),"Furnish and install wired temperature & humidity sensors in cold aisles.  Sensors to be located at front of IT equipment racks, mounted 5'-0"" A.F.F.  Includes combination T/H sensor, wiring, junction boxes, conduits, and associated hardware for connection to Meta's FacNet via Modbus on RS485 interface to Meta's gateways.  Qty of sensors = 3 per row.",46062,Yes,Closed,,333000,20,ea,6660000,TFO Add,Meta,Suites,Yes,Yes,,,Design,No,,,,Cost Estimation,
+61,"04.05.C.5.i.b
+04.05.C.5.i.c
+04.05.C.5.ii.b
+04.05.C.5.ii.c
+04.05.C.6",Mechanical ,SLA sensors - air (Meta),"Ancillary equipment & wiring (gateways, twisted pair wiring for RS485 interface, CAT6 wiring for uplinks to Meta FacNet, enclosures, conduit/raceway, fittings, etc.), for T/H sensors",46062,Yes,Closed,,292500,20,per Data Hall,5850000,TFO Add,Meta,Suites,Yes,Yes,,,Design,No,,,,Cost Estimation,
+62,04.05.C.5.iii.a,Mechanical ,SLA sensors - technical water (DLR),"Furnish and install wired sensors to measure supply water temperature, return water temperature, differential pressure, and flow rate on the technology cooling system (TCS) loops.  Installation to include sensors, wiring, junction boxes, conduits, and associated hardware for connection to Landlord's BMS system via Modbus on RS485 interface to Landlord's gateways.  Qty of sensors = 14 of each type per data hall. ",46085,Yes,Closed,,277500,20,ea,5550000,TFO Add,Meta,Suites,Yes,Yes,,,Design,No,,,,Cost Estimation,
+63,04.05.C.5.iii.a,Mechanical ,SLA sensors - technical water (Meta),"Furnish and install wired sensors to measure supply water temperature, return water temperature, differential pressure, and flow rate on the technology cooling system (TCS) loops.  Installation to include sensors, wiring, junction boxes, conduits, and associated hardware for connection to Landlord's BMS system via Modbus on RS485 interface to Landlord's gateways.  Qty of sensors = 14 of each type per data hall. ",46062,Yes,Closed,,160950,20,ea,3219000,TFO Add,Meta,Suites,Yes,Yes,,,Design,No,,,,Cost Estimation,
+64,"04.05.C.5.iii.b
+04.05.C.5.iii.c
+04.05.C.6",Mechanical ,SLA sensors - technical water (Meta),"Ancillary equipment & wiring (gateways, twisted pair wiring for RS485 interface, CAT6 wiring for uplinks to Meta FacNet, enclosures, conduit/raceway, fittings, etc.), for technical water sensors",46062,Yes,Closed,,83250,20,per Data Hall,1665000,TFO Add,Meta,Suites,Yes,Yes,,,Design,No,,,,Cost Estimation,
+65,04.06.D.a.i,Security,Manholes,Furnish and install locking covers on all telecommunications manholes.,46062,Yes,Closed,,9000,25,ea,225000,BB Mod,Meta,Site,Yes,Yes,Yes,D&C ROM,Design,Yes,,Cost per manhole - assuming 12,Ben Gonyea,Alex Arteaga,"May change based on meeting with Meta 3/2 - continue on this as is for now.
+Number of manholes may increase based on 3/9/26 5:00pm CDT call with Meta."
+66,04.06.D.a.ii,Security,Manholes,Furnish and install alarming on manholes which are outside of the campus security perimeter fence.,46062,Yes,Closed,,27500,9,ea,247500,BB Mod,Meta,Site,Yes,Yes,Yes,D&C ROM,Design,Yes,,Cost per manhole - assuming 12,Ben Gonyea,Alex Arteaga,"Per 3/9/26 5:00pm CDT call with Meta, no change to # of manholes outside of the campus security perimeter."
+67,"04.06.D.d.iii
+04.06.D.d.iv
+04.06.E.a
+04.06.E.b
+04.06.E.c
+04.06.E.d",Security,Caging,Furnish and install demising caging within Meta leased data hall spaces.,46087,Yes,Closed,,140,,per linear foot,0,TFO Add,Meta,Suites,Yes,Yes,,,Design,No,,,,Kerry O'Brien,"Per 3/9/26 5:00pm CDT call with Meta, no up-front need for demising cages within data halls."
+68,04.06.E.b.iv,Security,Caging,Furnish and install privacy panels/screens on caging.,46062,Yes,Closed,,125,,per linear foot,0,TFO Add,Meta,PBB,Yes,Yes,,,Design,No,,,,Kerry O'Brien,"Per 3/9/26 5:00pm CDT call with Meta, no up-front need for privacy panels on demising cages."
+69,04.06.E.c.i,Security,Caging,"Furnish and install cage mesh between data hall white space and CRAH/PDU galleries to Meta requirements of 1"" x 1"" openings with #9 ga. or larger wire, finish = black powder coat",46062,Yes,Closed,,22500,20,per Data Hall,450000,BB Mod,Meta,Suites,Yes,Yes,,D&C ROM,Design,Yes,,Cost per suite - assuming 20 suites,,Alex Arteaga,Do we have a submittal to share for approval?
+70,04.06.E.c.i.1,Security,Caging,"Furnish and install cage mesh within POP rooms to meet Meta requirements of 1"" x 1"" openings with #9 ga. or larger wire, finish = black powder coat",46062,Yes,Closed,,36000,2,per POP room,72000,BB Mod,Meta,PBB,Yes,Yes,,D&C ROM,Design,Yes,,"Cost per POP; cost only assumes PPOP and SPOP, not TPOE or QPOE",,Alex Arteaga,
+71,04.06.F.d,Security,Access control,Add 2-factor authentication (card key plus biometric) access control to the exterior of loading dock dock doors,46065,Yes,Closed,,15000,1,Lot,15000,BB Mod,Meta,PBB,Yes,Yes,,D&C ROM,Security,Yes,,cost per door assuming biometric,,Dalton Rosenberger,
+72,04.06.G.a.vi,Security,Access control,"Provide access control which adheres to OSDP version 2.2 requirements.  Includes communications & device encryption, reader tamper alarming & monitoring, furnishing & installing OSDP v2.2 compliant control boards, and secure cabling.",46065,Yes,Closed,,250000,1,Lot,250000,BB Mod,Meta,PBB,Yes,Yes,,DLR Security ROM,Security,Yes,,Included the ROM cost difference for changing out our standard access control boards and cabling to meet OSDP requirements. ,,Dalton Rosenberger,
+73,"04.06.G.b
+04.06.K",Security,Access control,"Furnish and install (or upgrade) access control for Meta leased spaces, either single-factor authenticaion (card key) or dual factor authentication (card-key plus biometric) based on requirements listed in the ""Access Control"" portion of the ""High Risk Spaces"" or ""Low/Medium Risk Spaces"" tables in the ""Device Matrix"" section of the PDC plus accompanying notes.",46085,Yes,Closed,,450000,1,Lot,450000,BB Mod,Meta,PBB,Yes,Yes,,DLR Security ROM,Security,Yes,,"Included ROM costs for additions and  customer spaces not currently captured in deisgn (i.e. ERAD, Spoke Room, etc.)",,Dalton Rosenberger,
+74,,Security,Access control,"Provide security, network, and systems equipment to support the Meta Robotics - Door Automation requirements. All common areas and data hall wifi to be on Landlord system.",46092,Yes,Closed,,7000000,1,Lot,7000000,BB Mod,Meta,PBB,,,,DLR Security ROM,Security,Yes,,"This includes all-in (security, IT, install, cable/conduit) ROM costs for adding WAP's to PBB (qty - 100). Includes adding WAP's devices only to all data halls (qty - 360). Includes estimated IT & SEC costs for the Robotics door automation solution (not vetted or engineered). ",,Dalton Rosenberger,
+75,"04.06.H.a
+04.06.K.a
+04.06.K.b",Security,Video Surveillance,"Furnish, install, program, test, commission, and provision video surveillance cameras throughout the campus, building common areas, building support areas, and Landlord accessible spaces to meet PDC video surveillence requirments.  Includes video surveillence cameras, housings, supports, wiring, junction boxes, conduits, fittings, VSS head end equipment, IT equipment, cabling, patch panels, enclosures, software, testing, commisisoning, and provisioning.
+NOTE:  Video surveillance within Meta leased spaces (Network rooms, data halls, storage spaces, office spaces, etc.) is not included on this item. ",46084,Yes,Closed,,2200000,1,Lot,2200000,BB Mod,Meta,PBB,Yes,Yes,,Security Consultant ROM,Security,Yes,,Includes additional IT costs to support VSS additions,,Dalton Rosenberger,
+76,"04.06.H.b
+04.06.K.a
+04.06.K.b",Security,Video Surveillance,"Furnish, install, program, test, commission, and provision video surveillance cameras within Meta leased spaces to meet PDC video surveillence requirements.  Includes video surveillence cameras, housing, supports, wiring, junction boxes, conduits, fittings, additional VSS head end equipment, IT equipment, cabling, patch panels, enclosures, software, testing, commisisoning, and provisioning.
+NOTE:  Video surveillancefor campus, common areas, building support areas, and Landlord-only accessible spaces is not included on this item. ",46085,Yes,Closed,,12601568,1,Lot,12601568,TFO Add,Meta,PBB,,,,Security Consultant ROM,Security,No,,Includes additional IT costs to support VSS additions,,Dalton Rosenberger,
+77,04.06.I.a,Security,Intrusion Detection,"Provide intrusion detection capability including laminated glass or anti-shatter film on all glazing which is within 10 ft (3m) of grade, door held open and door forced open detection on all exterior and interior doors, and all man-passable openings into Meta leased spaces that are not physically secured to prevent unauthorized access (e.g., those man passable opening which do not have tamper-resistant fasteners, physical locks, etc.).",46085,No,Closed,Not Required,0,1,Lot,0,BB Mod,Meta,PBB,Yes,Yes,,N/A,Security,Yes,,Already captured in design as part of the DLR Security DEG,,Dalton Rosenberger,
+78,04.07.E,Telecom,OSP Pathway,"OSP plant: Add maholes and OSP conduits on south side of CLT13 building to create full OSP conduit ring around CLT13 building, increase conduit count into TPOE (POE#3) and QPOE (POE#4), reduce perimeter duct bank ring conduit count to 24 x 4"" conduits.  Includes adding 2 x Landlord standard size manholes, adding 24 x 4"" OSP conduits x ±950' run, adding 4 x 4"" OSP conduits from MH06 to TPOE (POE#3), and adding 12 x 4"" OSP conduits from MH09 to QPOE (POE#4) to create QPOE (POE#4).",46092,Yes,Closed,,4800000,1,Lot,4800000,BB Mod,Meta,Site,Yes,Yes,,D&C ROM,Design,Yes,,DE&C: Lump sum,,Alex Arteaga,"Further refinement of duct bank requirements provided by Jeremy Berger during 3/9/26 5:00pm CDT call.  # of conduits required will not be uniform throughout the OSP duct bank ring & POEs, counts to vary depending upon location/run.  Eliminating this item from NRC summation."
+79,04.07.F.a.i.2.a,Telecom,ISP Pathways,"MMR: Furnish & install four (4) 4-post racks in each POP room.  Rack manufacturer = Chatsworth Products, Inc. (CPI)",46064,Yes,Closed,,6500,4,per rack,26000,TFO Add,Meta,PBB,Yes,Yes,,D&C ROM,Design,No,,"cost per Rack; assuming PPOP, SPOP, TPOE, QPOE",,Alex Arteaga,
+80,04.07.F.a.i.2.b,Telecom,ISP Pathways,"MMR: Furnish & install ISP telecommunications pathways (ladder rack, wire basket tray, fiber tray) in POP rooms to support carrier installations.  Reconfigure existing Landlord design as required per Meta direction.",46087,Yes,Closed,,277500,4,per POP room,1110000,TFO Add,Meta,PBB,,,,,Design,No,,,,Alex Arteaga,
+81,04.07.F.a.i.2.c,Telecom,ISP Pathways,"Soft Costs:  Design fees for detailed design of telecommunications pathways (conduit, trunking, ladder rack, wire basket tray, fiber tray, or similar) from POP rooms to Network suites per Meta provided design requirements.",46064,Yes,Closed,,133200,1,Lot,133200,TFO Add,Meta,PBB,Yes,Yes,,D&C ROM,Design,No,,D&C allowance for design and construciton,,Alex Arteaga,
+82,04.07.F.a.i.2.c,Telecom,ISP Pathways,"Build Costs: Furnish and install telecommunications pathways (conduit, trunking, ladder rack, wire basket tray, fiber tray, or similar) from POP rooms to Network suites per detailed designs based on Meta provided design requirements.",46064,Yes,Closed,,7909882,1,Lot,7909882,TFO Add,Meta,PBB,,,,,Design,No,,,,Cost Estimation,
+83,04.07.F.a.ii.2,Telecom,ISP Pathways,"Entrance Facilities:  Furnish and install void-free, fire-rated plywood covering on all four (4) walls of POP rooms",46087,Yes,Closed,,8000,4,per POP room,32000,BB Mod,Meta,PBB,Yes,Yes,,D&C ROM,Design,Yes,,"cost per room; assuming PPOP, SPOP, TPOE, QPOE
+NOTE:  CRitsema increased cost from $2k per room to $8k per room, now assuming $2k per wall.",,Alex Arteaga,Confirm this cost? Is this for one wall? All walls? What is scope…
+84,"04.07.F.a.ii.5
+04.07.F.b.iii.4.a",Telecom,ISP Pathways,"Riser Rooms, Carrier & Front-End Network:  Use POP and POE rooms as a riser and extend pathways to 2nd floor. Includes core drilling, 4"" diameter conduit sleeves between floors, fire stopping, and wall-mounted ladder rack or wire basket tray to support vertical data cable runs between floors.",46064,Yes,Closed,,277500,1,Lot,277500,BB Mod,Meta,PBB,Yes,Yes,,D&C ROM,Design,Yes,,D&C allowance for design and construciton,,Alex Arteaga,
+85,04.07.F.b.iii.4.b,Telecom,ISP Pathways,"Riser Rooms, Intra-building Back-End Network:  Deploy telecommunications pathways between back-end MDF pairs.  Includes core drilling / slab cuts, 20"" x 6"" sleeves between floors, fire stopping, and supports for vertical data cable runs between floors.",46064,Yes,Closed,,138750,1,Lot,138750,TFO Add,Meta,PBB,,,,,Design,No,,"Cost estimation based on six (6) levels of pathways - 1 x ladder rack, 1 x fiber tray, 4 x wire basket tray",,Cost Estimation,
+86,04.07.F.b,Telecoms,ISP Pathways,"Engineer, furnish, and install telecommunications pathways to support data cabling for customer Front End (FE), Back End (BE), and General Systems (GS) networks, including ladder rack (Tier-1), Cable Trough (Tier-2), and wire basket tray (Tier-3, Tier-4, Tier-5, and Tier-GS), between Meta leased spaces (Network suites, Megapods, Offce Space, Storage Space, GS spaces, ancillary support rooms, etc.) and between Meta lease spaces and Landlord spaces.  Include pathways, pathway accessories, IDFs (GSIDF and ADMIDF), MDFs (GSMDF), racks, rack accessories, cable management, rack power distribution, rack power circuits, wiring, conduits, junction boxes, supports, bracket, and associated hardware.  Precise requirement to be per detailed design drawings & specifications based upon Meta provided design requirements.",46084,Yes,Closed,,22107803,1,Lot,22107803,TFO Add,Meta,PBB,,,,,Design,No,,"Cost estimation based on six (6) levels of pathways - 1 x ladder rack, 1 x fiber tray, 4 x wire basket tray",,Cost Estimation,
+87,04.08.A,DAS/PTP,Public Safety (ERRCS) DAS,"Furnish and install public safety (ERRCS) DAS per AHJ requirements.  Includes all ERRCS active equipment, antennas, wiring (LV and power), conduits, junction boxes, fittings, supports, appurtenances, and associated hardware for a complete system installation.",46073,No,Closed,Not Required,650000,0,Lot,0,N/A,N/A,PBB,N/A,N/A,N/A,D&C ROM,Design,Yes,,D&C allowance for code required DAS system.  Cannot be shared with commercial DAS.,,Alex Arteaga,Required by AHJ.  Being carried in DLR BoD program - not included in AIR/BOM costing calculations.
+88,04.08.B,DAS/PTP,Land Mobile Radio (LMR),"Furnish and install stand-alone land mobile radio (LMR) repeater system building-wide.  Includes all LMR active equipment, antennas, wiring (LV and power), conduits, junction boxes, fittings, supports, appurtenances, and associated hardware for a complete system installation.",46084,Yes,Closed,,650000,1,Lot,650000,TFO Add,Meta,PBB,Yes,Yes,,D&C ROM,Design,No,,"Can be combined with Commercial (Cellular) DAS for same price, i.e., cost of stand-alone LMR repeater system is $650k, cost of combined LMR+DAS system is $650k.",,Alex Arteaga,"Reivew Meta preferred vendors (Motorola), are we DLR planning to install anyway as part of our base build?"
+89,04.08.C,DAS/PTP,Commercial (Cellular) DAS,"Furnish and install commercial (cellular) distributed antenna system (DAS) building-wide for Tenant, Landlord, and visitor use.  Includes all DAS active equipment, antennas, wiring (LV and power), conduits, junction boxes, fittings, supports, appurtenances, and associated hardware for a complete system installation.",46073,Yes,Closed,,650000,1,Lot,650000,TFO Add,Meta,PBB,Yes,Yes,,D&C ROM,Design,No,,"Costing matches D&C allowance for AHJ code-required DAS system.  Per AHJ, commercial DAS is not allowed to share system with public safety (ERRCS) DAS.  Can be combined with LMR repeater system for same price, i.e., cost of stand-alone commercial DAS system is $650k, cost of combined LMR+DAS system is $650k.",,Alex Arteaga,
+90,04.08.D.d,DAS/PTP,Precision Timing Protocol (PTP GPS),"GPS Antenna: Furnish and install 2"" mast suitable for mounting Huber Suhner GPS-over-fiber Precision Timing Protocol (PTP) antenna.  Locate antenna on suitable position on building rooftop per customer direction.  Includes mast, base, weights, roof mat, and Class-4 Laser warning signage.  Antenna to be provided and installed by Meta / others. ",46079,Yes,Closed,,18710.16,2,per GPS,37420.32,TFO Add,Meta,PBB,,,,,Design,No,,,,Cost Estimation,
+91,04.08.D.d,DAS/PTP,Precision Timing Protocol (PTP GPS),"GPS Pathway: Furnish and install 2 x 2"" diameter EMT conduits from Network room data hall to rooftop antenna installation area.  Includes NEMA 4 rated rooftop enclosure, rooftop doghouse, penetrations (rooftop, floor/ceiling slab, wall), conduits, junction boxes, pull boxes, supports, fittings, associated hardware, and mule tape / pull tape.  Cabling to be provided and installed by Meta / others.",46079,Yes,Closed,,38230.62,4,per Data Hall,152922.48,TFO Add,Meta,PBB,,,,,Design,No,,,,Cost Estimation,
+92,04.09,Fire Alarm,Fire Alarm,Reconfiguration or addition of upstream fire alarm equipment (LFACP or FACP) to support changes to fire detection fixture locations/additions,46062,Yes,Closed,,45000,20,per Data Hall,900000,BB Mod,Meta,Suites,Yes,Yes,,D&C ROM,Design,Yes,,,,Alex Arteaga,
+93,04.09,Fire Alarm,Fire Alarm,"Relocation, reconfiguration, or addition of fire alarm fixtures to fully coordinate with Meta IT equipment row and aisle locations",46062,Yes,Closed,,275000,20,per Data Hall,5500000,BB Mod,Meta,Suites,Yes,Yes,,D&C ROM,Design,Yes,,,,Alex Arteaga,
+94,04.10,Fire Detection,Fire Detection,"Reconfiguration or addition of upstream fire detection equipment (VESDA head ends, LFACP or FACP) to support changes to fire detection fixture locations/additions",46062,Yes,Closed,,65000,20,per Data Hall,1300000,BB Mod,Meta,Suites,,,,,Design,Yes,,,,Alex Arteaga,
+95,04.10,Fire Detection,Fire Detection,"Relocation, reconfiguration, or addition of fire detection fixtures to fully coordinate with Meta IT equipment row and aisle locations",46062,Yes,Closed,,100000,20,per Data Hall,2000000,BB Mod,Meta,Suites,Yes,Yes,,D&C ROM,Design,Yes,,,,Alex Arteaga,
+96,04.11,Fire Suppression,Fire Suppression,"Reconfiguration or addition of upstream fire suppression equipment (pre-action equipment, pumps,  valves, etc.) to support changes to fire detection fixture locations/additions",46062,Yes,Closed,,16500,20,per Data Hall,330000,BB Mod,Meta,Suites,,,,,Design,Yes,,,,Alex Arteaga,
+97,04.11,Fire Suppression,Fire Suppression,"Relocation, reconfiguration, or addition of fire suppression fixtures (sprinkler heads) and related pipng to fully coordinate with Meta IT equipment row and aisle locations",46062,Yes,Closed,,45000,20,per Data Hall,900000,BB Mod,Meta,Suites,,,,,Design,Yes,,,,Alex Arteaga,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,"Not Included:
+MCR Racks
+2-post and 4-post IT equipment racks
+Fiber distribution frams / fiber splicing racks / frames
+Meta admin furniture",,,,,,,,,,,,,,,,,,,,,,
